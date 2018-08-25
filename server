@@ -1,0 +1,172 @@
+Physical Location:	US, California    Node ID: v7106    VPS ID: 1058831
+IP address:	ssh 172.96.17.38
+SSH Port:	26160
+
+
+
+password F69vnn5pL0xz
+
+password for mysql 88AAchao
+
+
+
+https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-16-04
+
+http://www.aao.cdut.edu.cn/
+
+ dnsenum --noreverse -o mydomain.xml www.aao.cdut.edu.cn
+202.115.133.163
+
+
+perl hotrod-ddos.pl -dns aao.cdut.edu.cn
+
+
+
+
+XAMPP will be install /opt/lampp
+
+
+/opt/lampp/xampp start
+
+
+start lampp:
+
+cd /opt/lampp
+./manager-linux-x64.run
+
+
+http://localhost/wordpress/
+http://localhost/phpmyadmin/
+
+http://localhost/wordpress/wp-admin/
+
+
+
+把服务端的文件传到本地
+ scp ssh 172.96.17.38:/root/Downloads/wordpress-4.9.8.tar.gz
+
+把本地文件传到服务端
+scp /root/Downloads/wordpress-4.9.8.tar.gz   root@172.96.17.38:/wordpress-4.9.8.tar.gz
+scp  -r /root/Downloads/wordpress-4.9.8  root@172.96.17.38:/wordpress-4.9.8 
+
+
+
+lnmp 一键安装
+root@ubuntu:~# cd /home/wwwroot/
+root@ubuntu:/home/wwwroot# mv default old
+root@ubuntu:/home/wwwroot# wget https://cn.wordpress.org/wordpress-4.7.2-zh_CN.tar.gz
+
+
+# 目录以及目录下的文件授权 [root@vultr wwwroot]# chown -R 755 /home/wwwroot chown: changing ownership of ‘/home/wwwroot/old/.user.ini’: Operation not permitted # 将目录的所有者分给www组下的www用户。 [root@vultr wwwroot]# chown -R www:www /home/wwwroot/ chown: changing ownership of ‘/home/wwwroot/old/.user.ini’: Operation not permitted
+
+systemctl status nginx
+
+
+
+sudo systemctl stop nginx
+
+sudo systemctl restart nginx
+If you want to start the Nginx at the server boot.
+
+$ sudo systemctl enable nginx
+
+Server Logs:
+
+/var/log/nginx/access.log: It will store all the entry request to the web server if you have configured to do that.
+/var/log/nginx/error.log: Nginx errors are recorded in this file.
+
+
+/etc/nginx/nginx.conf: This is the configuration file of Nginx. Any changes made in this file will reflect in Nginx functionality.
+
+
+
+One thing to note is that the folder should be empty, then run the following command
+
+rmdir directory_name
+Another thing to note is that the command your are typing should not start with a slash(/) not unless the folder is under root.
+
+The last option and you should be very careful while using this one, is to force removal of the directory in question including any other files/directories in it.
+
+rm -rf directory_name
+
+Nginx相当的稳定、功能丰富、安装配置简单、低系统资源
+
+============================= Check install ==============================
+Checking ...
+Nginx: OK
+MySQL: OK
+PHP: OK
+PHP-FPM: OK
+Clean src directory...
++------------------------------------------------------------------------+
+|          LNMP V1.4 for Ubuntu Linux Server, Written by Licess          |
++------------------------------------------------------------------------+
+|           For more information please visit https://lnmp.org           |
++------------------------------------------------------------------------+
+|    lnmp status manage: lnmp {start|stop|reload|restart|kill|status}    |
++------------------------------------------------------------------------+
+|  phpMyAdmin: http://IP/phpmyadmin/                                     |
+|  phpinfo: http://IP/phpinfo.php                                        |
+|  Prober:  http://IP/p.php                                              |
++------------------------------------------------------------------------+
+|  Add VirtualHost: lnmp vhost add                                       |
++------------------------------------------------------------------------+
+|  Default directory: /home/wwwroot/default                              |
++------------------------------------------------------------------------+
+|  MySQL/MariaDB root password: root                          |
++------------------------------------------------------------------------+
++-------------------------------------------+
+|    Manager for LNMP, Written by Licess    |
++-------------------------------------------+
+|              https://lnmp.org             |
++-------------------------------------------+
+nginx (pid 24078 24076) is running...
+php-fpm is runing!
+● mysql.service - LSB: start and stop MySQL
+   Loaded: loaded (/etc/init.d/mysql; bad; vendor preset: enabled)
+   Active: active (running) since Sat 2018-08-11 23:30:53 CST; 1s ago
+     Docs: man:systemd-sysv-generator(8)
+   CGroup: /system.slice/mysql.service
+           ├─24117 /bin/sh /usr/local/mysql/bin/mysqld_safe --datadir=/usr/local/mysql/var --pid-file=/usr/local/mysql/var/ubuntu.pid
+           └─24610 /usr/local/mysql/bin/mysqld --basedir=/usr/local/mysql --datadir=/usr/local/mysql/var --plugin-dir=/usr/local/mysql/lib/plugin --user=mysql --log-error=/usr/local/mysql/var/ubuntu.err --open-files-limit=65535 --pid-file=/usr/local/mysql/var/ubuntu.pid --socket=/tmp/mysql.sock --port=3306
+
+Aug 11 23:30:51 ubuntu systemd[1]: Starting LSB: start and stop MySQL...
+Aug 11 23:30:51 ubuntu mysql[24102]: Starting MySQL
+Aug 11 23:30:53 ubuntu mysql[24102]: .. *
+Aug 11 23:30:53 ubuntu systemd[1]: Started LSB: start and stop MySQL.
+State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              
+LISTEN     0      50           *:3306                     *:*                  
+LISTEN     0      128          *:80                       *:*                  
+LISTEN     0      128          *:26160                    *:*                  
+LISTEN     0      128         :::26160                   :::*                  
+Install lnmp takes 29 minutes.
+
+
+
+IMPORTANT NOTES:
+ - The following errors were reported by the server:
+
+   Domain: www.huhaofly.org
+   Type:   None
+   Detail: DNS problem: NXDOMAIN looking up A for www.huhaofly.org
+ - Your account credentials have been saved in your Certbot
+   configuration directory at /etc/letsencrypt. You should make a
+   secure backup of this folder now. This configuration directory will
+   also contain certificates and private keys obtained by Certbot so
+   making regular backups of this folder is ideal.
+Let's Encrypt SSL Certificate create failed!
+================================================
+Virtualhost infomation:
+Your domain: www.huhaofly.org
+Home Directory: /home/wwwroot/www.huhaofly.org
+Rewrite: wordpress
+Enable log: yes
+Database username: wordpress
+Database userpassword: 88AAchao
+Database Name: wordpress
+Create ftp account: no
+Enable SSL: yes
+  =>Let's Encrypt
+================================================
+root@ubuntu:/home/wwwroot/default# 
+	
