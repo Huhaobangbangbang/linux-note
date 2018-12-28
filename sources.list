@@ -1,0 +1,46 @@
+#163网易 Kali源
+deb http://mirrors.163.com/debian wheezy main non-free contrib 
+deb-src http://mirrors.163.com/debian wheezy main non-free contrib 
+deb http://mirrors.163.com/debian wheezy-proposed-updates main non-free contrib 
+deb-src http://mirrors.163.com/debian wheezy-proposed-updates main non-free contrib 
+deb-src http://mirrors.163.com/debian-security wheezy/updates main non-free contrib 
+deb http://mirrors.163.com/debian-security wheezy/updates main non-free contrib
+
+
+#中科大 Kali源
+deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
+deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
+
+#浙江大学 Kali源
+deb http://mirrors.zju.edu.cn/kali kali-rolling main contrib non-free
+deb-src http://mirrors.zju.edu.cn/kali kali-rolling main contrib non-free
+
+#东软大学 Kali源
+deb http://mirrors.neusoft.edu.cn/kali kali-rolling/main non-free contrib
+deb-src http://mirrors.neusoft.edu.cn/kali kali-rolling/main non-free contrib
+
+#重庆大学 Kali源
+deb http://http.kali.org/kali kali-rolling main non-free contrib
+deb-src http://http.kali.org/kali kali-rolling main non-free contrib
+
+#官方Kali源
+deb http://http.kali.org/kali kali-rolling main non-free contrib
+deb-src http://http.kali.org/kali kali-rolling main non-free contrib
+
+
+
+
+    deb http://nginx.org/packages/ubuntu/ trusty nginx
+    deb-src http://nginx.org/packages/ubuntu/ trusty nginx
+
+# Regular Repositories
+deb http://http.kali.org/kali sana main non-free contrib
+deb http://security.kali.org/kali-security sana/updates main contrib non-free
+
+# Source repositories
+deb-src http://http.kali.org/kali sana main non-free contrib
+deb-src http://security.kali.org/kali-security sana/updates main contrib non-free
+#清华大学
+deb http://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free
+deb-src https://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free
+
