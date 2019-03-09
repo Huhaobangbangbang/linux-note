@@ -1,0 +1,7 @@
+yum update   更新系统
+
+
+wget安装与配置
+
+yum -y install wget
+
