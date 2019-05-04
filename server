@@ -166,4 +166,9 @@ Enable SSL: yes
   =>Let's Encrypt
 ================================================
 root@ubuntu:/home/wwwroot/default# 
+
+
+
+可视化管理数据库软件
+phpMyAdmin
 	
