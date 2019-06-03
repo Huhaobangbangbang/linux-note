@@ -172,3 +172,4 @@ root@ubuntu:/home/wwwroot/default#
 可视化管理数据库软件
 phpMyAdmin
 	
+https://www.digitalocean.com/community/tutorials/how-to-serve-django-applications-with-uwsgi-and-nginx-on-ubuntu-16-04
